@@ -1,0 +1,98 @@
+.timeline 
+  background: #FBB03B
+  h3
+    margin: 0
+    text-transform: uppercase
+    font-size: 30px
+    font-weight: 300
+    color: white
+    padding: 100px 0 30px
+  ul
+    padding: 0 50px 50px
+    margin-top: 0px 
+  li
+    list-style-type: none
+    position: relative
+    width: 6px
+    margin: 0 auto
+    padding-top: 50px
+    background: #fff
+    &::after
+      content: ''
+      position: absolute
+      left: 50%
+      bottom: 0
+      transform: translateX(-50%)
+      width: 30px
+      height: 30px
+      border-radius: 50%
+      background: inherit
+    .timeline-bubble
+      position: relative
+      bottom: 0
+      width: 400px
+      padding: 15px
+      background: #60E4EA
+      color: white
+      &::before
+        content: ''
+        position: absolute
+        bottom: 7px
+        width: 0
+        height: 0
+        border-style: solid
+    &:nth-child(odd) .timeline-bubble
+      left: 45px
+      &::before
+        left: -15px
+        border-width: 8px 16px 8px 0
+        border-color: transparent #60E4EA transparent transparent
+    &:nth-child(even) .timeline-bubble
+      left: -470px
+      &::before
+        right: -15px
+        border-width: 8px 0 8px 16px
+        border-color: transparent transparent transparent #60E4EA
+
+time
+  display: block
+  font-size: 1.2rem
+  font-weight: bold
+  margin-bottom: 8px
+
+.timeline ul li
+  &::after
+    transition: background .5s ease-in-out
+  &.in-view::after
+    background: #FF008C
+  .timeline-bubble
+    visibility: hidden
+    opacity: 0
+    transition: all .5s ease-in-out
+  &:nth-child(odd) .timeline-bubble
+    transform: translate3d(200px, 0, 0)
+  &:nth-child(even) .timeline-bubble
+    transform: translate3d(-200px, 0, 0)
+  &.in-view .timeline-bubble
+    transform: none
+    visibility: visible
+    opacity: 1
+
+@media screen and (max-width: 900px)
+  .timeline ul li
+    .timeline-bubble
+      width: 250px
+    &:nth-child(even) .timeline-bubble
+      left: -315px
+
+@media screen and (max-width: 600px)
+  .timeline ul li
+    margin-left: 20px
+    .timeline-bubble
+      width: calc(100vw - 91px)
+    &:nth-child(even) .timeline-bubble
+      left: 45px
+      &::before
+        left: -15px
+        border-width: 8px 16px 8px 0
+        border-color: transparent #60E4EA transparent transparent

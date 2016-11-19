@@ -1,0 +1,33 @@
+.main-nav 
+  background: #FF008C
+  z-index: 999
+
+  &.main-nav-scrolled
+    position: fixed
+    width: 100%
+    top: 0
+
+  ul 
+    margin: 0
+    padding: 0
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    list-style: none
+    li
+      margin: 5px 30px 5px 0
+
+      &:last-child
+        margin-right: 0
+  a 
+    font-weight: 300
+    text-transform: uppercase
+    font-size: 20px
+    line-height: 1.2
+    display: flex
+    align-items: flex-start
+    color: #fff
+    
+    &:hover, &:focus
+      color: black
+      border-bottom: 1px #333 solid  

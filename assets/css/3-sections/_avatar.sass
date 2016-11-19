@@ -1,0 +1,204 @@
+//isnspiration taken from http://codepen.io/msahlfeld/pen/IkEiH
+.avatar
+  position: relative
+  float: left  
+  .avatar-lockup
+    position: absolute
+    animation: floating 4s infinite
+
+    @keyframes floating 
+      0%   
+        top: 1px
+      50%  
+        top: 5px
+      100%
+        top: 1px
+
+    .hair
+      position: absolute
+      width: 94px
+      height: 111px
+      left: 66px
+      top: 2px
+      background: #E1B04C
+      border-top-left-radius: 55px
+      border-top-right-radius: 55px
+
+    .circle
+      position: absolute
+      width: 68px
+      height: 60px
+      left: 75px
+      top: 21px
+      background: #FFD8AD
+      border-top-left-radius: 25px
+      border-top-right-radius: 160px
+
+    .mouth
+      position: absolute
+      height: 5px
+      width: 6px
+      top: 87px
+      left: 108px
+      background: #F00
+      border-radius: 44%
+
+    .body
+      position: absolute
+      width: 0
+      height: 0
+      top: 105px
+      left: 40px
+      border-top: 150px solid #FF008C
+      border-left: 70px solid transparent
+      border-right: 70px solid transparent
+      border-top-left-radius: 50px
+      border-top-right-radius: 50px
+      z-index: 3
+
+    .capeleft
+      position: absolute
+      left: 33px
+      top: 121px
+      height: 20px
+      width: 0
+      border-right: 50px solid #666
+      border-bottom: 70px solid #666
+      border-left: 20px solid transparent
+      animation: capewaveleft 5s infinite
+      -webkit-animation: capewaveleft 5s infinite
+
+    .caperight
+      position: absolute
+      left: 107px
+      top: 121px
+      height: 20px
+      width: 0
+      border-right: 20px solid transparent
+      border-bottom: 70px solid #666
+      border-left: 60px solid #666
+      animation: capewave 5s infinite
+      -webkit-animation: capewave 5s infinite
+      &:hover
+
+      @keyframes capewave
+        0%
+          border-right: 20px solid transparent
+
+        7%
+          border-right: 30px solid transparent
+
+        19%
+          border-right: 20px solid transparent
+
+
+      @keyframes capewaveleft
+        0%
+          //border-right: 30px solid transparent
+        5%
+          left: 53px
+          border-left: 0 solid transparent
+
+        20%
+          left: 33px
+          border-left: 20px solid transparent
+
+    .logo-circle
+      position: absolute
+      top: 110px
+      left: 80px
+      height: 50px
+      width: 50px
+      border-radius: 50%
+      background: #6E96BB
+      border: 5px solid #fff
+      overflow: hidden
+      z-index: 3
+      transition: box-shadow 0.4s ease
+      
+    .shadow
+      position: absolute
+      top: 270px
+      left: 66px
+      height: 15px
+      width: 90px
+      background: #000
+      opacity: 0.2
+      border-radius: 90px / 15px
+      animation: resizing 4s ease-in infinite
+
+      @keyframes resizing 
+        0%   
+          width: 90px
+        50%  
+          width: 100px
+        100%
+          width: 90px
+
+    .chin
+      width: 25px
+      position: absolute
+      top: 78px
+      left: 74px
+      height: 0
+      border-top: 25px solid #FFD8AD
+      border-left: 25px solid transparent
+      border-right: 25px solid transparent
+
+    .lefteye
+      position: absolute
+      height: 5px
+      width: 15px
+      top: 59px
+      left: 82px
+      background: white
+      transform: skew(60deg)
+      -webkit-transform: skew(60deg)
+
+    .righteye
+      position: absolute
+      height: 5px
+      width: 15px
+      top: 59px
+      left: 119px
+      background: white
+      transform: skew(-60deg)
+      -webkit-transform: skew(-60deg)
+
+    .logo-circle
+      &:before
+        content: ""
+        width: 200%
+        height: 200%
+        position: absolute
+        top: -200%
+        left: -225%
+        z-index: 4
+        background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0))
+        background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0))
+        transition: all 0.5s ease-out
+      &:hover:before
+        top: 200%
+        left: 200%
+
+    .symbolleft
+      position: absolute
+      width: 46px
+      height: 12px
+      background: #CC1414
+
+    .symbolright
+      position: absolute
+      height: 20px
+      width: 43px
+      top: 40px
+      background: #CC1414
+
+    .symbolmiddle
+      position: absolute
+      height: 9px
+      width: 62px
+      top: 46%
+      background: #CC1414 none repeat scroll 0% 0%
+      transform: rotate(35deg)
+      left: -4px
