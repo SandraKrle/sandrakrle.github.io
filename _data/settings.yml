@@ -39,29 +39,21 @@ seo:
 # NOTE: The avatar is defined in the all.sass document.
 
 blurb: >
-  **Travis specializes in making things** for human people.
-  Most of the things he makes are [digital interfaces](http://travisneilson.com){:target="_blank"},
-  but he also puts effort into crafting [next-level beats](http://soundcloud.com/travis-neilson){:target="_blank"}
-  and [YouTube videos](http://youtube.com/user/devtipsfordesigners){:target="_blank"} about making codes happen.
+  **Sandra Krle's the name, frontend's the game.**
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet, risus ut feugiat condimentum, 
+  augue ligula imperdiet felis, a maximus purus odio a dolor. Curabitur hendrerit mauris eget accumsan viverra.
 
 
-skills:
-- {name: Communication, value: '9'}
-- {name: Organization, value: '7'}
-- {name: Learning, value: '10'}
-- {name: Teaching, value: '6'}
-- {name: Planning, value: '7'}
-- {name: Visual Design, value: '5'}
-- {name: UX Design, value: '8'}
-- {name: Programming, value: '6'}
+
+
 
 #-------------------------------
 # Work Section
 
 projects:
-- {name: TYPO International Design Talks, folder: 'proj-1', file: 'work/proj-1.html'}
-- {name: City-IN website concept, folder: 'proj-2', file: 'work/proj-2.html'}
-- {name: Crispy Icons, folder: 'proj-3', file: 'work/proj-3.html'}
+- {name: What I know, folder: 'proj-1', file: 'work/proj-1.html'}
+- {name: What you should know, folder: 'proj-2', file: 'work/proj-2.html'}
+- {name: File under other, folder: 'proj-3', file: 'work/proj-3.html'}
 
 
 
