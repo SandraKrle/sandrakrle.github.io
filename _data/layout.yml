@@ -17,3 +17,12 @@ headlineColor: "#333"
 bgcolor: "#e5eaee"
 documentBackgroundColor: "#fff"
 
+myBlue: '#60E4EA'
+myPink: '#FF008C'
+myRed: '#FF0000'
+myYellow: '#FBB03B'
+myDarkGray: '#666666'
+myLightGray: '#E0E0E0'
+
+navbarIndex: 999
+

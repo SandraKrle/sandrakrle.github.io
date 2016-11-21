@@ -5,7 +5,7 @@
   ul
     padding: 0 50px 50px
     margin-top: 0px 
-  li
+  .timeline-item
     list-style-type: none
     position: relative
     width: 6px
@@ -36,6 +36,13 @@
         width: 0
         height: 0
         border-style: solid
+      a
+        color: $myPink
+        cursor: pointer
+
+        &:hover
+          color: darken($myPink, 20%)
+
     &:nth-child(odd) .timeline-bubble
       left: 45px
       &::before
@@ -55,7 +62,7 @@ time
   font-weight: bold
   margin-bottom: 8px
 
-.timeline ul li
+.timeline ul .timeline-item
   &::after
     transition: background .5s ease-in-out
   &.in-view::after
@@ -74,14 +81,14 @@ time
     opacity: 1
 
 @media screen and (max-width: 900px)
-  .timeline ul li
+  .timeline ul .timeline-item
     .timeline-bubble
       width: 250px
     &:nth-child(even) .timeline-bubble
       left: -315px
 
 @media screen and (max-width: 600px)
-  .timeline ul li
+  .timeline ul .timeline-item
     margin-left: 20px
     .timeline-bubble
       width: calc(100vw - 91px)

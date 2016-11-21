@@ -1,26 +1,22 @@
 <section>
-
-  <h3>Let's work together</h3>
-
-<form method="POST" action="//formspree.io/{{ site.data.settings.email }}">
-
-  <fieldset class="contact-info-group">
-
-    <label><span>Your Name</span>
-    <input type="text" name="name"></label>
-
-    <label><span>Your Email</span>
-    <input type="email" name="_replyto"></label>
-
-  </fieldset>
-
-  <label><span>Tell me about your project</span>
-  <textarea name="message"></textarea></label>
-
-  <fieldset class="submit-wrap">
-    <input type="submit" value="Send">
-  </fieldset>
-
+    <div class="social-links section-contact">
+        {% for link in site.data.settings.social %}
+            <a href="{{ link.link }}" class="icon-{{ link.icon }}"></a>
+        {% endfor %}
+    </div>
+    <a class="biglink" href="mailto:{{ site.data.settings.email }}">{{ site.data.settings.email }}</a>
+    <h3>Let's work together</h3>
+    <form method="POST" action="//formspree.io/{{ site.data.settings.email }}">
+        <fieldset class="contact-info-group">
+            <label><span>Your Name</span>
+            <input type="text" name="name"></label>
+            <label><span>Your Email</span>
+            <input type="email" name="_replyto"></label>
+        </fieldset>
+        <label><span>Tell me about your project</span>
+    <textarea name="message"></textarea></label>
+    <fieldset class="submit-wrap">
+        <input type="submit" value="Send">
+    </fieldset>
 </form>
-
 </section>
