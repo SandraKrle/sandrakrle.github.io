@@ -3,15 +3,19 @@
   <div class="lockup">
 
     <div class="content-wrap">
-      <nav>
-        {% for item in site.data.settings.menu %}
-          <a href="{{ item.url }}">{{ item.name }}</a>
-        {% endfor %}
-      </nav>
-
       <p class="copyright">All content copyright {{ site.time | date: '%Y' }}</p>
     </div>
 
+    <div class="avatar-peek-face">
+      <img src="assets/img/avatar-peek-face.png">
+    </div>
+
+    <div class="avatar-peek-cape">
+      <img src="assets/img/avatar-peek-cape.png">
+    </div>
+
   </div>
+
+  
 
 </footer>
