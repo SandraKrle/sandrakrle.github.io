@@ -1,5 +1,9 @@
 .section-contact
   text-align: center
+  background: $myLightGray
+
+  h3
+    color: $myPink
 
 .social-links
   max-width: 700px
@@ -11,21 +15,20 @@
   a
     display: block
     //background: $accent
-    border: 2px solid $accent
+    border: 2px solid $myPink
     +size(50px)
     line-height: 50px
-    color: $accent
+    color: $myPink
     border-radius: 50%
     font-size: 28px
     margin: 20px
     position: relative
 
-
     &:after
       content: ''
       display: block
       +position(absolute, 0px 0px 0px 0px)
-      border: 2px solid $accent
+      border: 2px solid $myPink
       border-radius: 50%
       margin: -2px
       opacity: 1
@@ -38,7 +41,7 @@
 .bar
   width: 250px
   height: 0px
-  border-top: 4px solid $accent
+  border-top: 4px solid $myPink
   margin: 0px auto 50px
 
 .biglink

@@ -1,10 +1,10 @@
 form
   max-width: 450px
-  margin: 0 auto 100px
+  margin: 0 auto 50px
   padding: 0 20px
 
   input, textarea
-    border: 3px solid $accent
+    border: 3px solid $myPink
     width: 100%
     +box-sizing(border-box)
     padding: 10px
@@ -25,14 +25,14 @@ form
     text-align: right
 
   [type="submit"]
-    background: $accent
+    background: $myPink
     color: white
     font-size: 18px
     text-transform: uppercase
     width: 33%
 
     &:hover
-      background: $accent-light
+      background: lighten($myPink, 10%)
 
 
 
