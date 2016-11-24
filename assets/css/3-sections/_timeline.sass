@@ -1,12 +1,14 @@
-.timeline 
+.timeline
   background: #FBB03B
   overflow: hidden
 
   h3
     color: #fff
+
   ul
     padding: 0 50px 50px
-    margin-top: 0px 
+    margin-top: 0px
+
   .timeline-item
     list-style-type: none
     position: relative
@@ -14,8 +16,9 @@
     margin: 0 auto
     padding-top: 50px
     background: #fff
+
     &::after
-      content: ''
+      content: ""
       position: absolute
       left: 50%
       bottom: 0
@@ -24,6 +27,7 @@
       height: 30px
       border-radius: 50%
       background: inherit
+
     .timeline-bubble
       position: relative
       bottom: 0
@@ -31,13 +35,15 @@
       padding: 15px
       background: #60E4EA
       color: white
+
       &::before
-        content: ''
+        content: ""
         position: absolute
         bottom: 7px
         width: 0
         height: 0
         border-style: solid
+
       a
         color: $myPink
         cursor: pointer
@@ -47,12 +53,15 @@
 
     &:nth-child(odd) .timeline-bubble
       left: 45px
+
       &::before
         left: -15px
         border-width: 8px 16px 8px 0
         border-color: transparent #60E4EA transparent transparent
+
     &:nth-child(even) .timeline-bubble
       left: -470px
+
       &::before
         right: -15px
         border-width: 8px 0 8px 16px
@@ -66,17 +75,22 @@ time
 
 .timeline ul .timeline-item
   &::after
-    transition: background .5s ease-in-out
+    transition: background 0.5s ease-in-out
+
   &.in-view::after
     background: #FF008C
+
   .timeline-bubble
     visibility: hidden
     opacity: 0
-    transition: all .5s ease-in-out
+    transition: all 0.5s ease-in-out
+
   &:nth-child(odd) .timeline-bubble
     transform: translate3d(200px, 0, 0)
+
   &:nth-child(even) .timeline-bubble
     transform: translate3d(-200px, 0, 0)
+
   &.in-view .timeline-bubble
     transform: none
     visibility: visible
@@ -86,16 +100,20 @@ time
   .timeline ul .timeline-item
     .timeline-bubble
       width: 250px
+
     &:nth-child(even) .timeline-bubble
       left: -315px
 
 @media screen and (max-width: 600px)
   .timeline ul .timeline-item
     margin-left: 20px
+
     .timeline-bubble
       width: calc(100vw - 91px)
+
     &:nth-child(even) .timeline-bubble
       left: 45px
+
       &::before
         left: -15px
         border-width: 8px 16px 8px 0

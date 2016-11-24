@@ -14,7 +14,6 @@
 
   a
     display: block
-    //background: $accent
     border: 2px solid $myPink
     +size(50px)
     line-height: 50px
@@ -25,19 +24,18 @@
     position: relative
 
     &:after
-      content: ''
+      content: ""
       display: block
       +position(absolute, 0px 0px 0px 0px)
       border: 2px solid $myPink
       border-radius: 50%
       margin: -2px
       opacity: 1
-      +transition()
+      +transition
 
     &:hover:after
       +transform(scale(1.5))
       opacity: 0
-
 .bar
   width: 250px
   height: 0px

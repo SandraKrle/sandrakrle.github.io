@@ -3,7 +3,6 @@
 
   h3
     color: $myYellow
-    
 
 .clients-belt
   width: 100%
@@ -28,7 +27,6 @@
         max-width: 100px
         border-radius: 50%
 
-
       .client-name
         display: block
         text-transform: uppercase
@@ -47,9 +45,6 @@
       margin-top: -10px
       position: relative
 
-
-
-
 // Logos
 .clients-logos
   position: relative
@@ -59,7 +54,6 @@
   +display(flex)
   +align-items(flex-end)
   +justify-content(space-around)
-
 
   .client-logo
     cursor: pointer
@@ -72,7 +66,6 @@
       opacity: 1
       border-bottom: 4px solid $accent
 
-
 .client-quote-mark
   +position(absolute, -18px null null -15px)
   +size(60px)
@@ -81,8 +74,6 @@
 
   path
     fill: $accent
-
-
 
 // Controls
 .client-controls
@@ -121,9 +112,6 @@
     &.active-client
       border-color: $accent
 
-
-
-
 @media (max-width: 850px)
   .clients-logos
     +flex-wrap(wrap)
@@ -153,7 +141,6 @@
 
   .clients-mobile-nav
     display: block
-
 
 @media (max-width: 600px)
   .client-controls

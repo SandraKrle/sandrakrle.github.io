@@ -4,11 +4,13 @@
   height: 300px
   animation: floating 4s infinite
 
-  @keyframes floating 
-    0%   
+  @keyframes floating
+    0%
       top: 1px
-    50%  
+
+    50%
       top: 5px
+
     100%
       top: 1px
 
@@ -79,6 +81,7 @@
     border-left: 60px solid #666
     animation: capewave 5s infinite
     -webkit-animation: capewave 5s infinite
+
     &:hover
 
     @keyframes capewave
@@ -91,10 +94,10 @@
       19%
         border-right: 20px solid transparent
 
-
     @keyframes capewaveleft
       0%
         //border-right: 30px solid transparent
+
       5%
         left: 53px
         border-left: 0 solid transparent
@@ -115,7 +118,7 @@
     overflow: hidden
     z-index: 3
     transition: box-shadow 0.4s ease
-    
+
   .shadow
     position: absolute
     top: 270px
@@ -127,11 +130,13 @@
     border-radius: 90px / 15px
     animation: resizing 4s ease-in infinite
 
-    @keyframes resizing 
-      0%   
+    @keyframes resizing
+      0%
         width: 90px
-      50%  
+
+      50%
         width: 100px
+
       100%
         width: 90px
 
@@ -179,6 +184,7 @@
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0))
       background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0))
       transition: all 0.5s ease-out
+
     &:hover:before
       top: 200%
       left: 200%

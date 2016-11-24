@@ -1,30 +1,52 @@
-.main-nav 
+.main-nav
   background: $myPink
   z-index: $navbarIndex
-  text-align: center
 
   &.main-nav-scrolled
     position: fixed
     width: 100%
     top: 0
 
-  ul 
+  ul
     margin: 0
     padding: 0
     list-style: none
-    
-    li
-      margin-right: 60px
-      display: inline-block
+    display: flex
+    flex-direction: row
+    justify-content: center
 
-      a 
+    li
+      margin-right: 30px
+      display: inline-block
+      flex-shrink: 1
+
+      &:last-child
+        margin-right: 0
+
+      a
         font-weight: 300
         text-transform: uppercase
         font-size: 20px
         line-height: 1.2
         color: #fff
-    
-    &:hover, 
+
+    &:hover,
     &:focus
       color: $myLightGray
-      
+
+@media screen and (max-width: 500px)
+  .main-nav
+    ul
+      justify-content: start
+
+      li
+        margin-right: 10px
+
+        &:last-child
+          margin-right: 0
+
+@media screen and (max-width: 415px)
+  .main-nav
+    ul
+      flex-direction: column
+      align-items: center
