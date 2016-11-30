@@ -4,7 +4,7 @@ $(function() {
         loop: true,
         loopCount: false,
         typeSpeed: 300,
-        starDelay: 200,
+        starDelay: 2000,
         backDelay: 600
     });
 });

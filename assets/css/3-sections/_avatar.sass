@@ -2,6 +2,7 @@
   position: relative
   width: 200px
   height: 300px
+  margin-top: 20px
   animation: floating 4s infinite
 
   @keyframes floating
@@ -38,12 +39,14 @@
 
   .mouth
     position: absolute
-    height: 5px
-    width: 6px
-    top: 87px
-    left: 108px
-    background: #F00
-    border-radius: 44%
+    height: 4px
+    width: 11px
+    top: 83px
+    left: 102px
+    background: #666
+    border: 2px #F00 solid
+    border-bottom-left-radius: 100%
+    border-bottom-right-radius: 100%
 
   .body
     position: absolute
@@ -154,23 +157,23 @@
 
   .lefteye
     position: absolute
-    height: 5px
-    width: 15px
+    height: 7px
+    width: 16px
     top: 59px
-    left: 82px
+    left: 84px
     background: white
     transform: skew(60deg)
-    -webkit-transform: skew(60deg)
+    -webkit-transform: skew(20deg)
 
   .righteye
     position: absolute
-    height: 5px
-    width: 15px
+    height: 7px
+    width: 16px
     top: 59px
-    left: 119px
+    left: 118px
     background: white
     transform: skew(-60deg)
-    -webkit-transform: skew(-60deg)
+    -webkit-transform: skew(-20deg)
 
   .logo-circle
     &:before
