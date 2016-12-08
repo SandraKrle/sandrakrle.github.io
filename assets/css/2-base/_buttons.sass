@@ -1,0 +1,39 @@
+.basicBox
+  height: 90px
+  color: #666
+  font-size: 1.15rem
+  text-transform: uppercase
+  cursor: pointer
+  text-align: center
+  display: flex
+  align-items: center
+  justify-content: center
+
+  &:hover
+    stroke: #666
+    color: $myYellow
+
+    svg rect
+      stroke-width: 5
+      stroke-dasharray: 35, 245
+      stroke-dashoffset: 38
+      -webkit-transition: all 0.8s ease-in-out
+      -moz-transition: all 0.8s ease-in-out
+      -ms-transition: all 0.8s ease-in-out
+      -o-transition: all 0.8s ease-in-out
+
+  svg
+    position: absolute
+    top: 0
+    left: 0
+    rect, path, polyline
+      fill: none
+      stroke: #666
+      stroke-width: 5
+
+svg rect
+  stroke-dasharray: 300, 0
+  -webkit-transition: all 0.8s ease-in-out
+  -moz-transition: all 0.8s ease-in-out
+  -ms-transition: all 0.8s ease-in-out
+  -o-transition: all 0.8s ease-in-out

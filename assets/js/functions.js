@@ -12,6 +12,13 @@ $(function() {
     $('textarea').autosize();
 });
 
+//Tooltip
+ $(document).ready(function() {
+    $('.tooltip').tooltipster({
+      theme: 'tooltipster-noir'
+    });
+});
+
 // smoothScroll function is applied from the document ready function
 function smoothScroll(duration) {
     $('a[href*="#"]:not([href="#"])').click(function() {

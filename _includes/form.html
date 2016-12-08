@@ -1,6 +1,6 @@
-<section class="section-contact" id="contact">
+<section class="section-contact" id="contact" class="anchor">
     <h3>Let's work together</h3>
-    <form method="POST" action="//formspree.io/{{ site.data.settings.email }}">
+    <form method="POST" action="//formspree.io/info@sandrakrle.site">
         <fieldset class="contact-info-group">
             <label><span>Your Name</span>
             <input type="text" name="name"></label>
@@ -8,14 +8,14 @@
             <input type="email" name="_replyto"></label>
         </fieldset>
         <label>
-            <span>Tell me about your project</span>
+            <span>Your message</span>
             <textarea name="message"></textarea>
         </label>
         <fieldset class="submit-wrap">
             <input type="submit" value="Send">
         </fieldset>
     </form>
-    <a class="" href="mailto:{{ site.data.settings.email }}">{{ site.data.settings.email }}</a>
+    <a href="mailto:{{ site.data.settings.email }}">{{ site.data.settings.email }}</a>
     <div class="social-links">
         {% for link in site.data.settings.social %}
             <a href="{{ link.link }}" class="icon-{{ link.icon }}"></a>

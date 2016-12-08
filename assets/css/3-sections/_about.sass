@@ -2,7 +2,7 @@
   background: #fff
 
   .face-lockup
-    max-width: 780px
+    max-width: 1000px
     +display(flex)
     margin: 0 auto
     +align-items(center)
@@ -18,8 +18,8 @@
 
     [class^="icon-"]
       +size(100px)
-
       background: #fff
+      cursor: default
 
       .char-entity
         font-size: 3em
@@ -27,6 +27,9 @@
         margin: 0
         top: 20%
         font-weight: 700
+        
+        &:hover
+          color: $myPink
 
       path
         fill: $myDarkGray
@@ -45,6 +48,10 @@
 
       &.icon-browser
         +order(5)
+        
+        &:hover
+          path
+            fill: $myPink
 
   @media screen and (max-width: 650px)
     .face-lockup
@@ -65,7 +72,7 @@
     color: $myYellow
 
   .blurb
-    max-width: 720px
+    max-width: 1000px
     padding: 0 20px
     margin: 50px auto
     font-size: 24px

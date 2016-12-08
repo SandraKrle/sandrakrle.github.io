@@ -1,33 +1,11 @@
 .section-work
   overflow-x: hidden
-  margin: 30px 0
-
-/* Hackey-type CSS as a jQuery Alternative for when the browser does not have jQuery enabled.*/
-.noscript
-  display: none
-
-@each $proj in $projects
-  ##{$proj}:checked ~ .work-belt .work-wrap .work-container noscript #content-#{$proj}
-    display: block
-
-.return
-  display: none
-
-.trigger
-  display: none
-
-  &:checked ~ .work-belt
-    left: -100%
-
-    .work-wrap .work-container
-      display: block
-
-/* End of gross / hackey CSS*/
+  margin: 30px 0 50px
 
 .work-belt
   width: 200%
   position: relative
-  left: 10%
+  left: 0%
   +transition(all, 800ms)
 
   &.slided
@@ -47,7 +25,7 @@
     position: relative
     display: block
     float: left
-    width: 25%
+    width: 33%
     cursor: pointer
 
     .thumb-unit
@@ -59,7 +37,10 @@
         max-width: 100%
 
     @media screen and (max-width: 760px)
-      width: 50%
+      width: 100%
+
+      &:not(:first-child)
+        margin-top: 20px
 
     .thumb-overlay
       +position(absolute)
@@ -110,7 +91,7 @@
     +size(40px)
     cursor: pointer
     opacity: 0.5
-    +position(absolute, -4px null null -60px)
+    +position(absolute, -4px null null -40px)
 
     path
       fill: rgba(0, 0, 0, 0.4)
@@ -121,7 +102,7 @@
 @media (max-width: 740px)
   .work-container
     .work-return
-      left: 0px
+      left: 14px
 
     h4
       margin-left: 60px

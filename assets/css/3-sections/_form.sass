@@ -4,7 +4,7 @@ form
   padding: 0 20px
 
   input, textarea
-    border: 3px solid $myPink
+    border: 3px solid $myDarkGray
     width: 100%
     +box-sizing(border-box)
     padding: 10px
@@ -15,24 +15,24 @@ form
 
     &:focus
       outline: none
-      border-color: darken($myPink, 20%)
+      border-color: darken($myDarkGray, 20%)
 
   textarea
     height: 10em
     resize: none
 
   .submit-wrap
-    text-align: right
+    text-align: center
 
   [type="submit"]
-    background: $myPink
+    background: $myDarkGray
     color: white
     font-size: 18px
     text-transform: uppercase
     width: 33%
 
     &:hover
-      background: lighten($myPink, 10%)
+      background: lighten($myDarkGray, 10%)
 
   .contact-info-group
     label

@@ -1,11 +1,12 @@
-<section class="about" id="about">
+<section class="about" id="about" class="anchor">
 	<h3>About Me</h3>
 	<div class="face-lockup">
 		<div class="face-img"></div>
-		<div class="icon-html"><p class="char-entity">&lt; &frasl; &gt;</p></div>
-		<div class="icon-css"><p class="char-entity">&nbsp;&lcub; &rcub;</p></div>
-		<div class="icon-js"><p class="char-entity">&lcub; &semi; &rcub;</p></div>
-		<div class="icon-browser">{% include icons/icon-browser.html %}</div>
+		<div class="icon-html tooltip" title="I know HTML!"><p class="char-entity">&lt; &frasl; &gt;</p></div>
+		<div class="icon-css tooltip" title="I know CSS!"><p class="char-entity">&nbsp;&lcub; &rcub;</p></div>
+		<div class="icon-js tooltip" title="I know JavaScript!"><p class="char-entity">&lcub; &semi; &rcub;</p></div>
+		<div class="icon-browser tooltip" title="and other web stuff...!">{% include icons/icon-browser.html %}</div>
 	</div>
 	<div class="blurb">{{ site.data.settings.blurb | markdownify }}</div>
 </section>
+

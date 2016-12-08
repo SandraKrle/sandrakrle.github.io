@@ -3,7 +3,7 @@ $(function() {
         stringsElement: $('#typed-strings'),
         loop: true,
         loopCount: false,
-        typeSpeed: 300,
+        typeSpeed: 100,
         starDelay: 2000,
         backDelay: 600
     });
