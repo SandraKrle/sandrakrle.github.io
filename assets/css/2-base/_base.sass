@@ -32,8 +32,6 @@ h1, h2, h3, h4, h5, h6
   font-size: 10px
   line-height: 1.2
 
-
-
 p
   margin: 0 0 20px 0
 
@@ -64,7 +62,7 @@ a:hover, a:focus
 
 
 
-/* Selection colors (easy to forget)
+/* Selection colors
   ------------------------------------	*/
 
 ::selection
@@ -114,9 +112,10 @@ fieldset
 .anchor
   display: block
   position: relative
-  top: -42px
+  height: 42px
+  margin-top: -42px
   visibility: hidden
 
   @media (max-width: 680px)
-    top: -168px  
-
+    height: 168px
+    margin-top: -168px  

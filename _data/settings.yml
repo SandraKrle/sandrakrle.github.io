@@ -5,18 +5,14 @@ title: Sandra Krle
 description: Frontend developer portfolio
 email: sandra.krlle@gmail.com
 
-# NOTE: The Logo and Background image are defined in the all.sass document.
-
 menu:
 - {name: About Me, url: '#about'}
 - {name: Work, url: '#work'}
-- {name: Clients, url: '#clients'}
 - {name: Contact, url: '#contact'}
 
 #-------------------------------
 # SEO Section
 
-# NOTE: Providing SEO information will make this website more searchable on the internet.
 
 seo:
   description: 'juniour frontend developer portfolio'
@@ -24,8 +20,6 @@ seo:
 #-------------------------------
 # Google Analytics Section
 
-# Analytics helps you understand who visits your website.
-# Learn more at: http://support.google.com/analytics/answer/1008065
 
 # NOTE: If you want to use Google Analytics for basic web tracking: Just uncomment and enter your UA-Code here.
 
@@ -34,7 +28,6 @@ seo:
 #-------------------------------
 # About Section
 
-# NOTE: The avatar is defined in the all.sass document.
 
 blurb: >
   **Sandra Krle's the name, frontend's the game.**
@@ -48,29 +41,9 @@ blurb: >
 # Work Section
 
 projects:
-- {name: What I know, folder: 'proj-1', file: 'work/proj-1.html'}
-- {name: What you should know, folder: 'proj-2', file: 'work/proj-2.html'}
-- {name: File under other, folder: 'proj-3', file: 'work/proj-3.html'}
-
-
-
-
-
-#-------------------------------
-# Clients Section
-
-clients:
-- {avatar: 'arno-smit.jpg',
-  name: 'Arno Smit',
-  title: 'Co-founder of FundedByMe AB',
-  quote: '<p><strong>Having Sandra onboard our team was a very pleasant experience.</strong> This being her first work experience as a Frontend developer she did a great job
-  at learning the bits and tricks of the trade. If she keeps up with this tempo I predict a very bright developers future for her!</p>',
-  logo: 'fundedbyme-logo.jpg'}
-- {avatar: 'karl-murran.jpg',
-  name: 'Karl Murran',
-  title: 'Co-founder of EdQu AB',
-  quote: '<p><strong>Working with Travis was the highlight of my career.</strong> Other moments of note were collecting the largest number of paperclips in the office, and winning a trophy for saying "uh huh, and then what?" 30 times in a row to my girlfriend without her noticing.</p>',
-  logo: 'edqu-logo.jpg'}
+- {name: Professional experience, folder: 'proj-1', file: 'work/proj-1.html'}
+- {name: What I look for, folder: 'proj-2', file: 'work/proj-2.html'}
+- {name: Personal stuff, folder: 'proj-3', file: 'work/proj-3.html'}
 
 
 #-------------------------------

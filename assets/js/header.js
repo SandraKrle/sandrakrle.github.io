@@ -17,7 +17,6 @@ function myFunction() {
     }
 }
 
-
 $(window).scroll(function () {
 
     var mn = $(".topnav");

@@ -2,14 +2,12 @@
 ---
 
 <!DOCTYPE html>
-<html class="">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ site.data.settings.seo.description }}">
-  <meta rel="author" href="{{ site.data.settings.seo.rel-author }}">
-  <meta rel="publisher" href="{{ site.data.settings.seo.rel-publisher }}">
 
   <title>{{ site.data.settings.title }}</title>
 
@@ -21,6 +19,7 @@
 
   {% include analytics.html %}
 </head>
+
 <body>
 
 {% include hero.html %}
@@ -33,7 +32,6 @@
 
 {% include timeline.html %}
 
-
 {% include form.html %}
 
 {% include footer.html %}
@@ -45,6 +43,6 @@
 <script src="{{ site.github.url }}/assets/js/typed.js"></script>
 <script src="{{ site.github.url }}/assets/js/timeline.js"></script>
 <script src="{{ site.github.url }}/assets/js/modal.js"></script>
-<script type="text/javascript" src="tooltipster/dist/js/tooltipster.bundle.min.js"></script>    
+<script src="tooltipster/dist/js/tooltipster.bundle.min.js"></script>    
 </body>
 </html>

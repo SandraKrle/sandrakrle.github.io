@@ -35,7 +35,6 @@ function smoothScroll(duration) {
     });
 }
 
-
 function workBelt() {
 
     $(".trigger").remove();
@@ -51,7 +50,6 @@ function workBelt() {
         $('.work-container').hide(800);
     });
 }
-
 
 function workLoad() {
 

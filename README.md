@@ -1,6 +1,6 @@
 # My Site
 
-Jekyll theme
-_Artist Themes in the wild:_
+Created with Jekyll
 
-Superhero avatar inspiration codepen http://codepen.io/msahlfeld/pen/IkEiH
+Built upon Jekyll theme
+_Artist Themes in the wild:_
