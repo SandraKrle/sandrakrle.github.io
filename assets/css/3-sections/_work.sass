@@ -74,6 +74,7 @@
   +box-sizing(border-box)
   position: relative
   display: none
+  text-align: center
 
   h4, noscript h4
     color: $accent
@@ -87,7 +88,7 @@
     max-width: 100%
     margin-bottom: 20px
 
-  .work-return
+  .icon-return
     +size(40px)
     cursor: pointer
     opacity: 0.5
@@ -99,9 +100,30 @@
     &:hover
       opacity: 1
 
+  .btn-return
+    background-color: #fff
+    border-radius: 1px
+    border: 1px solid #dcdcdc
+    display: none
+    cursor: pointer
+    color: #666666
+    font-size: 14px
+    padding: 10px 20px
+    text-decoration: none
+
+    &:hover 
+      background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%)
+      background-color: #f6f6f6
+
+    @media (max-width: 680px)
+      display: inline-block  
+
+  .project-load
+    text-align: left    
+
 @media (max-width: 740px)
   .work-container
-    .work-return
+    .icon-return
       left: 14px
 
     h4

@@ -45,17 +45,18 @@ function workBelt() {
         $('.work-container').show();
     });
 
-    $('.work-return').click(function() {
+    $('.icon-return').click(function() {
+        $('.work-belt').removeClass("slided");
+        $('.work-container').hide(800);
+    });
+
+    $('.btn-return').click(function() {
         $('.work-belt').removeClass("slided");
         $('.work-container').hide(800);
     });
 }
 
 function workLoad() {
-
-    // $.ajaxSetup({
-    //     cache: true
-    // });
 
     $('.thumb-container label').click(function() {
         var $this = $(this),
