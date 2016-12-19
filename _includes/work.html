@@ -1,3 +1,4 @@
+<span class="anchor" id="details"></span>
 <section class="section-work">
     {% for project in site.data.settings.projects %}
         <input type="radio" name="trigger" class="trigger" id="{{ project.folder }}" />
@@ -44,9 +45,10 @@
         <div class="work-wrap">
             <div class="work-container">
                 <label for="return">
-                    <div class="work-return">{% include icons/icon-back.html %}</div>
+                    <div class="icon-return">{% include icons/icon-back.html %}</div>
                 </label>
                 <div class="project-load"></div>
+                <a href="#details"><button class="btn-return" >Back</button></a>
             </div>
         </div>
     </div>
