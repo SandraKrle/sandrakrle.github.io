@@ -2,8 +2,8 @@
 # General Site Settings
 
 title: Sandra Krle
-description: Frontend developer portfolio
-email: sandra.krlle@gmail.com
+description: Frontend developer
+email: sandra dot krlle at gmail
 
 menu:
 - {name: About Me, url: '#about'}
@@ -15,7 +15,7 @@ menu:
 
 
 seo:
-  description: 'Frontend Developer Portfolio'
+  description: 'Frontend Developer'
 
 #-------------------------------
 # Google Analytics Section
@@ -28,12 +28,11 @@ google-analytics-ua: UA-78144734-1
 
 
 blurb: >
-  **Sandra Krle's the name, frontend's the game.**
-  I’m a Junior Frontend Developer based in Stockholm, Sweden. 
-  I taught myself how to HTML, CSS and JavaScript.
-  Then I did few internships at some really cool start-ups who taught me even more.
-  Now I seek me a job. Preferably for juniors who are really fast and awesome at learning.
-
+  **Sandra Krle's the name, frontend's the game.**<br/>
+  I’m a Junior/Intermediate Frontend Developer currently based in Visby, Sweden.<br/>
+  In 2015 I taught myself how to write JavaScript.<br/>
+  Today, I work in a very big and important swedish company.<br/>
+  React is my choice of weapon.
 
 #-------------------------------
 # Work Section
@@ -48,5 +47,5 @@ projects:
 # Contact Section
 
 social:
-- {icon: 'linkedin', link: 'https://se.linkedin.com/in/sandrakrle'}
-- {icon: 'codepen', link: 'https://codepen.io/sandrakrle/'}
+- {icon: 'linkedin', link: 'https://www.linkedin.com/in/sandrakrle'}
+- {icon: 'github', link: 'https://github.com/SandraKrle'}
