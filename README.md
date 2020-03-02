@@ -3,4 +3,4 @@
 Created with Jekyll
 
 Built upon Jekyll theme
-_Artist Themes in the wild:_
+_Artist Themes in the wild_
