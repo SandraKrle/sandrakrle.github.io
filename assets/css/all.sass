@@ -1,37 +1,36 @@
 ---
 ---
 
-@import '1-tools/-tools-dir'
+@import '1-tools/_tools-dir'
 
 //------------------------------------------------
 // Transition the image paths from the settings file to usable SASS variables
-$animation: {{ site.data.layout.animation }}
+$animation: 'bounceOut'
 $logo-path: '{{ site.data.layout.logo }}'
 $hero-path: '{{ site.data.layout.hero }}'
 $avatar-path: '{{ site.data.layout.avatar }}'
 
-$projects: {% for project in site.data.settings.projects %} "{{ project.folder }}", {% endfor %}
+// $projects: {% for project in site.data.settings.projects %} "{{ project.folder }}", {% endfor %}
 
 //------------------------------------------------
 // Set some colors as sass variables
 
-$accent: {{ site.data.layout.accent }}
-$accent-light: adjust-hue(saturate(lighten($accent, 11%), 12.6%), 14%)
-$selectionColor: lighten($accent, 30%)
+$accent: #FBB03B
+$accent-light: adjust-hue(saturate(lighten(#FBB03B, 11%), 12.6%), 14%)
+$selectionColor: lighten(#FBB03B, 30%)
+$textColor: #666
+$headlineColor: #333
+$bgcolor: #e5eaee
+$documentBackgroundColor: #fff
 
-$textColor: {{ site.data.layout.textColor }}
-$headlineColor: {{ site.data.layout.headlineColor }}
-$bgcolor: {{ site.data.layout.bgcolor }}
-$documentBackgroundColor: {{ site.data.layout.documentBackgroundColor }}
+$myBlue: #60E4EA
+$myPink: #FF008C
+$myRed: #FF0000
+$myYellow: #FBB03B
+$myDarkGray: #666
+$myLightGray: #E0E0E0
 
-$myBlue: {{ site.data.layout.myBlue }}
-$myPink: {{ site.data.layout.myPink }}
-$myRed: {{ site.data.layout.myRed }}
-$myYellow: {{ site.data.layout.myYellow }}
-$myDarkGray: {{ site.data.layout.myDarkGray }}
-$myLightGray: {{ site.data.layout.myLightGray }}
-
-$navbarIndex: {{ site.data.layout.navbarIndex }}
+$navbarIndex: 999
 
 @import '2-base/-base-dir'
 @import '3-sections/-sections-dir'

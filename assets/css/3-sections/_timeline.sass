@@ -4,6 +4,7 @@
 
   h3
     color: #fff
+    font-weight: 500
 
   ul
     padding: 0 50px 50px
@@ -44,12 +45,12 @@
         height: 0
         border-style: solid
 
-      a
+      div
+        font-size: 1.5rem
         color: $myPink
-        cursor: pointer
 
-        &:hover
-          color: darken($myPink, 20%)
+      span  
+        color: $myPink    
 
     &:nth-child(odd) .timeline-bubble
       left: 45px
@@ -129,6 +130,7 @@ time
   font-size: 1.2rem
   font-weight: bold
   margin-bottom: 8px
+  color: #313131
 
 .timeline ul .timeline-item
   &::after
@@ -140,10 +142,9 @@ time
   .timeline-bubble
     visibility: hidden
     opacity: 0
-    transition: all 0.5s ease-in-out
 
-    span, a
-      font-size: 20px
+    span
+      font-size: 1.5rem
 
   &:nth-child(odd) .timeline-bubble
     transform: translate3d(200px, 0, 0)
@@ -155,9 +156,16 @@ time
     transform: none
     visibility: visible
     opacity: 1
+    border: inset 2px transparent;
 
 .center
   text-align: center
+
+#btn-modal-5, #btn-modal-4, #btn-modal-3, #btn-modal-2, #btn-modal-1
+  cursor: pointer
+
+  &:hover
+    border: inset 2px
 
 @media screen and (max-width: 900px)
   .timeline ul .timeline-item
@@ -172,7 +180,10 @@ time
     margin-left: 20px
 
     .timeline-bubble
-      width: calc(100vw - 91px)
+      width: 240px;
+      
+      div, span, time
+        font-size: 1rem
 
     &:nth-child(even) .timeline-bubble
       left: 45px
@@ -180,4 +191,11 @@ time
       &::before
         left: -15px
         border-width: 8px 16px 8px 0
-        border-color: transparent #60E4EA transparent transparent
+        border-color: transparent #60E4EA transparent transparent        
+
+@media screen and (max-width: 400px)
+  .timeline ul .timeline-item
+    margin-left: 20px
+
+    .timeline-bubble
+      width: 210px;

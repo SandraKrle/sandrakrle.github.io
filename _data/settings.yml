@@ -3,7 +3,7 @@
 
 title: Sandra Krle
 description: Frontend developer
-email: sandra dot krlle at gmail
+email: sandra [dot] krlle [at] gmail
 
 menu:
 - {name: About Me, url: '#about'}
@@ -29,16 +29,15 @@ google-analytics-ua: UA-78144734-1
 
 blurb: >
   **Sandra Krle's the name, frontend's the game.**<br/>
-  I’m a Junior/Intermediate Frontend Developer currently based in Visby, Sweden.<br/>
-  In 2015 I taught myself how to write JavaScript.<br/>
-  Today, I work in a very big and important swedish company.<br/>
-  React is my choice of weapon.
+  I am a self taught web developer with 3+ years of experience in web development. <br />
+  With a keen eye for pixel details and dedication to writing clean code, I've added great value to products and teams.
+  Based in Stockholm, Sweden.<br/>
 
 #-------------------------------
 # Work Section
 
 projects:
-- {name: Professional experience, folder: 'proj-1', file: 'work/proj-1/proj-1.html'}
+- {name: Skills, folder: 'proj-1', file: 'work/proj-1/proj-1.html'}
 - {name: What I look for, folder: 'proj-2', file: 'work/proj-2/proj-2.html'}
 - {name: Personal stuff, folder: 'proj-3', file: 'work/proj-3/proj-3.html'}
 
